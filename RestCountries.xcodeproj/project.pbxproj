@@ -11,6 +11,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 234D451D1DFDA95300AD46D4 /* Build configuration list for PBXAggregateTarget "mogenerator" */;
 			buildPhases = (
+				232522F71DFDAEDF0031CAE5 /* ShellScript */,
 			);
 			dependencies = (
 			);
@@ -20,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		232523001DFDB1E00031CAE5 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232522FC1DFDB1E00031CAE5 /* Countries.swift */; };
+		232523011DFDB1E00031CAE5 /* _Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232522FE1DFDB1E00031CAE5 /* _Countries.swift */; };
 		234D45061DFD968C00AD46D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234D45051DFD968C00AD46D4 /* AppDelegate.swift */; };
 		234D45081DFD968D00AD46D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234D45071DFD968D00AD46D4 /* ViewController.swift */; };
 		234D450D1DFD968D00AD46D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234D450C1DFD968D00AD46D4 /* Assets.xcassets */; };
@@ -30,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		232522FC1DFDB1E00031CAE5 /* Countries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		232522FE1DFDB1E00031CAE5 /* _Countries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Countries.swift; sourceTree = "<group>"; };
 		234D45021DFD968C00AD46D4 /* RestCountries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestCountries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		234D45051DFD968C00AD46D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		234D45071DFD968D00AD46D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,9 +60,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		232522FA1DFDB1E00031CAE5 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				232522FB1DFDB1E00031CAE5 /* mogen-classes */,
+				232522FD1DFDB1E00031CAE5 /* mogen-properties */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		232522FB1DFDB1E00031CAE5 /* mogen-classes */ = {
+			isa = PBXGroup;
+			children = (
+				232522FC1DFDB1E00031CAE5 /* Countries.swift */,
+			);
+			path = "mogen-classes";
+			sourceTree = "<group>";
+		};
+		232522FD1DFDB1E00031CAE5 /* mogen-properties */ = {
+			isa = PBXGroup;
+			children = (
+				232522FE1DFDB1E00031CAE5 /* _Countries.swift */,
+			);
+			path = "mogen-properties";
+			sourceTree = "<group>";
+		};
 		234D44F91DFD968C00AD46D4 = {
 			isa = PBXGroup;
 			children = (
+				232522FA1DFDB1E00031CAE5 /* DataModel */,
 				234D45041DFD968C00AD46D4 /* RestCountries */,
 				234D45031DFD968C00AD46D4 /* Products */,
 				5D78ACB50A8D12790064809E /* Pods */,
@@ -180,6 +211,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		232522F71DFDAEDF0031CAE5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd DataModel\n/Users/stefanlaza/Documents/mojiprojekti/RestCountries/DataModel/mogenerator-beta --swift --model ../RestCountries/RestCountries.xcdatamodeld --template-path ../tmpl --human-dir mogen-classes --machine-dir mogen-properties";
+		};
 		861DDB3724E3A32771AEE06D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,8 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232523011DFDB1E00031CAE5 /* _Countries.swift in Sources */,
 				234D45081DFD968D00AD46D4 /* ViewController.swift in Sources */,
 				234D451B1DFDA41000AD46D4 /* RestCountries.xcdatamodeld in Sources */,
+				232523001DFDB1E00031CAE5 /* Countries.swift in Sources */,
 				234D45061DFD968C00AD46D4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +459,7 @@
 				234D451F1DFDA95300AD46D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
