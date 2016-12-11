@@ -6,22 +6,37 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		234D451C1DFDA95300AD46D4 /* mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 234D451D1DFDA95300AD46D4 /* Build configuration list for PBXAggregateTarget "mogenerator" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = mogenerator;
+			productName = mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		234D45061DFD968C00AD46D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234D45051DFD968C00AD46D4 /* AppDelegate.swift */; };
 		234D45081DFD968D00AD46D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234D45071DFD968D00AD46D4 /* ViewController.swift */; };
-		234D450B1DFD968D00AD46D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234D45091DFD968D00AD46D4 /* Main.storyboard */; };
 		234D450D1DFD968D00AD46D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234D450C1DFD968D00AD46D4 /* Assets.xcassets */; };
 		234D45101DFD968D00AD46D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234D450E1DFD968D00AD46D4 /* LaunchScreen.storyboard */; };
+		234D45181DFD9A9E00AD46D4 /* RestCountries.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234D45171DFD9A9E00AD46D4 /* RestCountries.storyboard */; };
+		234D451B1DFDA41000AD46D4 /* RestCountries.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 234D45191DFDA41000AD46D4 /* RestCountries.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		234D45021DFD968C00AD46D4 /* RestCountries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestCountries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		234D45051DFD968C00AD46D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		234D45071DFD968D00AD46D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		234D450A1DFD968D00AD46D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		234D450C1DFD968D00AD46D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		234D450F1DFD968D00AD46D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		234D45111DFD968D00AD46D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		234D45171DFD9A9E00AD46D4 /* RestCountries.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RestCountries.storyboard; sourceTree = "<group>"; };
+		234D451A1DFDA41000AD46D4 /* RestCountries.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RestCountries.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +70,12 @@
 			isa = PBXGroup;
 			children = (
 				234D45051DFD968C00AD46D4 /* AppDelegate.swift */,
+				234D45171DFD9A9E00AD46D4 /* RestCountries.storyboard */,
 				234D45071DFD968D00AD46D4 /* ViewController.swift */,
-				234D45091DFD968D00AD46D4 /* Main.storyboard */,
 				234D450C1DFD968D00AD46D4 /* Assets.xcassets */,
 				234D450E1DFD968D00AD46D4 /* LaunchScreen.storyboard */,
 				234D45111DFD968D00AD46D4 /* Info.plist */,
+				234D45191DFDA41000AD46D4 /* RestCountries.xcdatamodeld */,
 			);
 			path = RestCountries;
 			sourceTree = "<group>";
@@ -98,6 +114,10 @@
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 					};
+					234D451C1DFDA95300AD46D4 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 234D44FD1DFD968C00AD46D4 /* Build configuration list for PBXProject "RestCountries" */;
@@ -114,6 +134,7 @@
 			projectRoot = "";
 			targets = (
 				234D45011DFD968C00AD46D4 /* RestCountries */,
+				234D451C1DFDA95300AD46D4 /* mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -123,9 +144,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234D45181DFD9A9E00AD46D4 /* RestCountries.storyboard in Resources */,
 				234D45101DFD968D00AD46D4 /* LaunchScreen.storyboard in Resources */,
 				234D450D1DFD968D00AD46D4 /* Assets.xcassets in Resources */,
-				234D450B1DFD968D00AD46D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				234D45081DFD968D00AD46D4 /* ViewController.swift in Sources */,
+				234D451B1DFDA41000AD46D4 /* RestCountries.xcdatamodeld in Sources */,
 				234D45061DFD968C00AD46D4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,14 +166,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		234D45091DFD968D00AD46D4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				234D450A1DFD968D00AD46D4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		234D450E1DFD968D00AD46D4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,6 +294,20 @@
 			};
 			name = Release;
 		};
+		234D451E1DFDA95300AD46D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		234D451F1DFDA95300AD46D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -299,8 +327,30 @@
 				234D45161DFD968D00AD46D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		234D451D1DFDA95300AD46D4 /* Build configuration list for PBXAggregateTarget "mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				234D451E1DFDA95300AD46D4 /* Debug */,
+				234D451F1DFDA95300AD46D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		234D45191DFDA41000AD46D4 /* RestCountries.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				234D451A1DFDA41000AD46D4 /* RestCountries.xcdatamodel */,
+			);
+			currentVersion = 234D451A1DFDA41000AD46D4 /* RestCountries.xcdatamodel */;
+			path = RestCountries.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 234D44FA1DFD968C00AD46D4 /* Project object */;
 }
