@@ -1,0 +1,21 @@
+PODS:
+  - RTCoreDataStack (2.0.4)
+
+DEPENDENCIES:
+  - RTCoreDataStack (from `https://github.com/radianttap/RTSwiftCoreDataStack.git`)
+
+EXTERNAL SOURCES:
+  RTCoreDataStack:
+    :git: https://github.com/radianttap/RTSwiftCoreDataStack.git
+
+CHECKOUT OPTIONS:
+  RTCoreDataStack:
+    :commit: 6dee7e6d8f604e1731e91207b7ef2348d05ae761
+    :git: https://github.com/radianttap/RTSwiftCoreDataStack.git
+
+SPEC CHECKSUMS:
+  RTCoreDataStack: 2cc7165d58b4fcadea361bc62556943a332db689
+
+PODFILE CHECKSUM: d95e1ad0c3b9056b24a7c07e5d83dc377ce31b3c
+
+COCOAPODS: 1.1.1
